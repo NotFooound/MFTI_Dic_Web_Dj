@@ -1,0 +1,58 @@
+{% extends "base_page.html" %}
+
+{% block page-title %}
+Добавить слово
+{% endblock %}
+
+{% block page-lead %}
+Добавьте слова на различных языках, в последствии вы сможете пройти тест на знание этих слов
+{% endblock %}
+
+
+
+{% block content %}
+<div class="container-sm px-5 py-5" id="term-form">
+    <form method="post">
+        <div class="row px-5 py-2">
+            <h3>Ваши контактные данные</h3>
+        </div>
+        <div class="row px-5 py-2">
+            <div class="col-md-6">
+                <label for="name">Ваше имя:</label>
+                <input type="text" class="form-control input-lg" name="name" id="name" placeholder="Александр" value required>
+            </div>
+            <div class="col-md-6">
+                <label for="email">Ваш контактный email:</label>
+                <input type="text" class="form-control input-lg" name="email" id="email" placeholder="Alex@Alexov.com" value required>
+            </div>
+        </div>
+        <div class="row px-5 py-2">
+            <h3>Слово, которое необходимо добавить</h3>
+        </div>
+        <div class="row px-5 py-2">
+            <div class="col-md-6">
+                <label for="new_term1">Слово на русском языке</label>
+                <input type="text" class="form-control input-lg" name="new_term1" id="new_term1">
+            </div>
+            <div class="col-md-6">
+                <label for="new_term2">Слово на английском языке</label>
+                <input type="text" class="form-control input-lg" name="new_term2" id="new_term2">
+            </div>
+            <div class="col-md-6">
+                <label for="new_term3">Слово на испанском языке</label>
+                <input type="text" class="form-control input-lg" name="new_term3" id="new_term3" placeholder="Поле необязательное для ввода">
+            </div>
+            <div class="col-md-6">
+                <label for="new_term4">Слово на французском языке</label>
+                <input type="text" class="form-control input-lg" name="new_term4" id="new_term4" placeholder="Поле необязательное для ввода">
+            </div>
+        </div>
+{#        <div class="row px-5 py-2">#}
+{#            <button class="btn btn-primary" formaction="/check-term">Проверить</button>#}
+{#        </div>#}
+        <div class="row px-5 py-2">
+            <button type="submit" class="btn btn-primary" formaction="/send-term">Отправить</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

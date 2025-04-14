@@ -1,0 +1,38 @@
+{% extends "base_page.html" %}
+
+{% block page-title %}
+Список слов
+{% endblock %}
+
+{% block page-lead %}
+В этом разделе выводятся все добавленные слова
+{% endblock %}
+
+{% block content %}
+<div class="container px-4 py-5" id="terms-table">
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th scope="col" class="py-3">#</th>
+              <th scope="col" class="py-3">Слово на русском языке</th>
+              <th scope="col" class="py-3">Слово на английском языке</th>
+              <th scope="col" class="py-3">Слово на испанском языке</th>
+              <th scope="col" class="py-3">Слово на французском языке</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for cnt, term1, term2, term3, term4 in terms %}
+            <tr>
+                <td class="py-3">{{ cnt }}</td>
+                <td class="py-3">{{ term1 }}</td>
+                <td class="py-3">{{ term2 }}</td>
+                <td class="py-3">{{ term3 }}</td>
+                <td class="py-3">{{ term4 }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+</div>
+{% endblock %}

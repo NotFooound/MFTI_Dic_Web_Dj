@@ -1,0 +1,59 @@
+{% extends "base_page.html" %}
+
+{% block page-title %}
+Дополнительная информация
+{% endblock %}
+
+{% block page-lead %}
+Этот проект имеет открытый код, по желанию его можно улучшить различными способами, которые приведены ниже
+{% endblock %}
+
+{% block content %}
+<h2 class="pb-2 border-bottom">Что можете сделать вы?</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+        <div class="col-lg-4">
+            <h4 class="py-1">Добавить новые функции</h4>
+        </div>
+        <div class="col-lg-8">
+            <p>Можно подключить доступный ИИ для перевода введённого слова, что упростит добавление слов.</p>
+        </div>
+    </div>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+        <div class="col-lg-4">
+            <h4 class="py-1">Добавить ещё одну форму</h4>
+        </div>
+        <div class="col-lg-8">
+            <p>Добавьте больше различных форм для расширения сервиса</p>
+        </div>
+    </div>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+        <div class="col-lg-4">
+            <h4 class="py-1">Разнообразить контент</h4>
+        </div>
+        <div class="col-lg-8">
+            <p>Этот проект — про иностранные языки. Например, можно сделать проект с терминами про математику либо другие науки </p>
+        </div>
+    </div>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+        <div class="col-lg-4">
+            <h4 class="py-1">Изменить вёрстку и/или дизайн-систему</h4>
+        </div>
+        <div class="col-lg-8">
+            <p>Этот проект использует <a href="https://getbootstrap.com">Bootstrap</a>. Попробуйте другие дизайн-системы, например:
+                <ul>
+                    <li><a href="https://materializecss.com">Materialize</a></li>
+                    <li><a href="https://semantic-ui.com">Semantic UI</a></li>
+                    <li><a href="https://get.foundation/templates.html">Foundation</a></li>
+                </ul>
+            </p>
+            <p>
+                Если же вам хочется оставить Bootstrap — измените вёрстку! Добавьте картинок, замените стили — словом, пробудите
+                внутреннего художника.
+            </p>
+            <p>
+                <span class="fst-italic">Вариант улучшения:</span> как правило, у сайта есть фавикон — маленькая иконка, отображающаяся
+                рядом с названием сайта во вкладке или окне браузера. Сейчас её нет — но вы можете её добавить.
+            </p>
+        </div>
+    </div>
+{% endblock %}

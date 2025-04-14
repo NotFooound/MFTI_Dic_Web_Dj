@@ -1,0 +1,96 @@
+{% extends "base_page.html" %}
+
+{% block page-title %}
+Простой словарь и тренажёр для изучения иностранных языков
+{% endblock %}
+
+{% block content %}
+<div class="container px-4" id="project-contents">
+{#    <h2 class="pb-2 border-bottom">Простой словарь и тренажёр для изучения иностранных языков</h2>#}
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5">
+        <div class="col d-flex">
+            <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#cpu-fill"></use>
+                </svg>
+            </div>
+            <div>
+                <h3 class="fs-2">Регистрация</h3>
+                <p>Зарегистрируйте нового пользователя</p>
+                <a href="/registration" class="btn btn-primary">
+                    Зарегистрировать
+                </a>
+            </div>
+        </div>
+        <div class="col d-flex">
+            <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#cpu-fill"></use>
+                </svg>
+            </div>
+            <div>
+                <h3 class="fs-2">Пройти тест</h3>
+                <p>Добавьте слова в список, чтобы пройти этот тест</p>
+                <a href="/test" class="btn btn-primary">
+                    Пройти
+                </a>
+            </div>
+        </div>
+
+        <div class="col d-flex">
+            <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#cpu-fill"></use>
+                </svg>
+            </div>
+            <div>
+                <h3 class="fs-2">Список терминов</h3>
+                <p>Здесь будут сохранены все ваши слова в виде таблицы</p>
+                <a href="/terms-list" class="btn btn-primary">Посмотреть</a>
+            </div>
+        </div>
+        <div class="col d-flex">
+            <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#cpu-fill"></use>
+                </svg>
+            </div>
+            <div>
+                <h3 class="fs-2">Форма для заполнения слов</h3>
+                <p>В данной форме есть возможность добавить новые слова в ваш список</p>
+                <a href="/add-term" class="btn btn-primary">
+                    Заполнить
+                </a>
+            </div>
+        </div>
+        <div class="col d-flex">
+            <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#cpu-fill"></use>
+                </svg>
+            </div>
+            <div>
+                <h3 class="fs-2">Статистика</h3>
+                <p>Сколько слов уже добавлено? Какой они длины?</p>
+                <a href="/stats" class="btn btn-primary">
+                    Изучить
+                </a>
+            </div>
+        </div>
+        <div class="col d-flex">
+            <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg class="bi" width="1em" height="1em">
+                    <use xlink:href="#cpu-fill"></use>
+                </svg>
+            </div>
+            <div>
+                <h3 class="fs-2">Дополнительная информация</h3>
+                <p>Здесь вы можете узнать дополнительную информацию про проект</p>
+                <a href="/addition" class="btn btn-primary">
+                    Перейти
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

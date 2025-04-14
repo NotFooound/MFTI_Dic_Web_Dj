@@ -1,0 +1,33 @@
+{% extends "base_page.html" %}
+
+{% block page-title %}
+Зарегистрировать пользователя
+{% endblock %}
+
+{% block page-lead %}
+В данном разделе вы можете зарегистрировать пользователя
+{% endblock %}
+
+
+{% block content %}
+<div class="container-sm px-5 py-5" id="term-form">
+    <form method="post">
+        <div class="row px-5 py-2">
+            <h3>Ваши контактные данные</h3>
+        </div>
+        <div class="row px-5 py-2">
+            <div class="col-md-6">
+                <label for="name">Ваше имя:</label>
+                <input type="text" class="form-control input-lg" name="name" id="name" placeholder="Александр" value required>
+            </div>
+            <div class="col-md-6">
+                <label for="email">Ваш контактный email:</label>
+                <input type="text" class="form-control input-lg" name="email" id="email" placeholder="Alex@Alexov.com" value required>
+            </div>
+        </div>
+        <div class="row px-5 py-2">
+            <button type="submit" class="btn btn-primary" formaction="/success_reg">Зарегистрировать</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

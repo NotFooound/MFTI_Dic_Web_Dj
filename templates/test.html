@@ -1,0 +1,43 @@
+{% extends "base_page.html" %}
+
+{% block page-title %}
+Тест
+{% endblock %}
+
+{% block page-lead %}
+В данном разделе вы можете пройти тест на знание добавленных раньше слов
+{% endblock %}
+
+{% block content %}
+<div class="row row-cols-12 row-cols-md-12 mb-12 text-center">
+    <form method="post">
+      <div class="col">
+        <div class="card mb-12 rounded-12 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Перевидите это слово </h4>
+          </div>
+          <div class="card-body">
+        <div class="col-md-12"> <p class="text-muted">На русском:</p> </div>
+        <h1 class="card-title pricing-card-title">{{ term1 }}</h1>
+          <div class="col-md-12"> <p class="text-muted">На испанском:</p> </div>
+            <h1 class="card-title pricing-card-title">{{ term3 }}</h1>
+            <div class="col-md-12"> <p class="text-muted">На французском:</p> </div>
+             <h1 class="card-title pricing-card-title">{{ term4 }}</h1>
+              <div class="col-md-12 py-2">
+                <label for="name">Введите слово на английском:</label>
+                <input type="text" class="form-control input-lg" name="word" id="word" placeholder="Например: Hello" value required>
+              </div>
+              <div class="row px-5 py-2">
+                <button type="submit" class="btn btn-primary" formaction="/success_word">Проверить</button>
+              </div>
+              <div>
+                <a href="/test" class="btn btn-primary">
+                    Получить другое случайное слово
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+</div>
+{% endblock %}
